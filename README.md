@@ -1,2 +1,2 @@
-# (https://irinaromanova.github.io/nerds/index.html)
-Нёрдс
+# [Нёрдс](https://irinaromanova.github.io/nerds/index.html)
+
