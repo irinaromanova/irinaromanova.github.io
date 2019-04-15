@@ -45,20 +45,6 @@
     }
   });
 
-
-
-  // Another 4 ways to make it work in IE
-
-  // 1) const naturalPointsArr = Array.from(pointsArray);
-  // 2) const naturalPointsArr = Array.prototype.slice.call(pointsArray);
-  // он же - const naturalPointsArr = [].slice.call(document.querySelectorAll('.promo__slider-control'), 0);
-  // 3) const naturalPointsArr = [...document.querySelectorAll('.promo__slider-control')];
-  // 4) using standart cycle "for";
-
-  // console.log(naturalPointsArr);
-
-
-
   let slideThroughPoints = function () {
     // I used this trick only for IE compatibility
     [].forEach.call(pointsArray, function(point, index) {
@@ -97,3 +83,121 @@
   slideThroughPoints();
 
 })();
+
+/*Карта*/
+
+var mapLink = document.querySelector(".open-map");
+var mapPopup = document.querySelector(".modal-map");
+var mapClose = mapPopup.querySelector(".modal-close");
+
+mapLink.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  mapPopup.classList.add("modal-show");
+});
+
+mapClose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  mapPopup.classList.remove("modal-show");
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (mapPopup.classList.contains("modal-show")) {
+      mapPopup.classList.remove("modal-show");
+    }
+  }
+});
+
+/*Обратная связь*/
+
+var link = document.querySelector(".button-write-us");
+var popup = document.querySelector(".write-us-modal");
+var close = popup.querySelector(".modal-close");
+var yourName = popup.querySelector(".write-name");
+var email = popup.querySelector(".write-email");
+var letterText = popup.querySelector(".write-letter");
+var isStorageSupport = true;
+var storageName = "";
+var storageEmail = "";
+
+try {
+  storageName = localStorage.getItem("yourName");
+  storageEmail = localStorage.getItem("email");
+} catch (err) {
+  isStorageSupport = false;
+}
+
+link.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popup.classList.add("modal-show");
+  if (storageName || storageEmail) {
+    yourName.value = storageName;
+    email.value = storageEmail;
+    letterText.focus();
+  } else {
+    yourName.focus();
+  }
+});
+
+close.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popup.classList.remove("modal-show");
+  popup.classList.remove("modal-error");
+});
+
+popup.addEventListener("submit", function (evt) {
+  if (!yourName.value || !email.value) {
+    evt.preventDefault();
+    popup.classList.remove("modal-error");
+    popup.offsetWidth = popup.offsetWidth;
+    popup.classList.add("modal-error");
+  } else {
+    if (isStorageSupport) {
+      localStorage.setItem("yourName", yourName.value);
+      localStorage.setItem("email", email.value);
+    }
+  }
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (popup.classList.contains("modal-show")) {
+      popup.classList.remove("modal-show");
+      popup.classList.remove("modal-error");
+    }
+  }
+});
+
+/*Товар добавлен в корзину*/
+
+var buyLink = document.querySelectorAll(".button-buy"), i;
+var buyPopup = document.querySelector(".added-cart");
+var buyClose = document.querySelector(".modal-close");
+var buyCancel = document.querySelector(".button-continue");
+
+for (i = 0; i < buyLink.length; ++i) {
+  buyLink[i].addEventListener("click", function (event) {
+    event.preventDefault(event);
+    buyPopup.classList.add("cart-modal-show");
+  })
+}
+
+buyClose.addEventListener("click", function (event) {
+  event.preventDefault(event);
+  buyPopup.classList.remove("cart-modal-show");
+});
+
+buyCancel.addEventListener("click", function (event) {
+  event.preventDefault(event);
+  buyPopup.classList.remove("cart-modal-show");
+});
+
+window.addEventListener("keydown", function (event) {
+  if (event.keyCode == 27) {
+    if (buyPopup.classList.contains("cart-modal-show")) {
+      buyPopup.classList.remove("cart-modal-show");
+    }
+  }
+});
