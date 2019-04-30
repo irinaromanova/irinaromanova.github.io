@@ -8,6 +8,7 @@ body {
   background-color: #ffffff;
   background-position: top center;
   background-repeat: no-repeat;
+  box-sizing: border-box;
 }
 
 a {
@@ -20,6 +21,14 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.container {
+  width: 960px;
+  padding: 0 10px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -89,14 +98,6 @@ input[type="radio"].visually-hidden {
 .sort-type-list,
 .pagination-list {
   list-style: none;
-}
-
-.container {
-  width: 960px;
-  padding: 0 10px;
-  margin: 0 auto;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
 }
 
 .user-navigation-list {
@@ -291,6 +292,7 @@ input.search-field::placeholder {
   -webkit-box-shadow: #b52933 0px 5px 0px 0px;
   box-shadow: #b52933 0px 5px 0px 0px;
   cursor: pointer;
+  overflow: visible;
 }
 
 .main-header-logo:hover,
@@ -1018,7 +1020,7 @@ input.search-field::placeholder {
 .products-list {
   margin: 0;
   padding: 0;
-  width: 970px;
+  width: 940px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1349,7 +1351,7 @@ input.search-field::placeholder {
 
 .services-slider-list {
   position: absolute;
-  width: 700px;
+  width: 620px;
   min-height: 300px;
   top: 68px;
   left: 320px;
@@ -1374,17 +1376,17 @@ input.search-field::placeholder {
 
 .services-slider-item:nth-child(1) {
   background: url("../img/delivery.png") 100% no-repeat;
-  background-position: 65% 25px;
+  background-position: 100% 25px;
 }
 
 .services-slider-item:nth-child(2) {
   background: url("../img/guarantee.png") 100% no-repeat;
-  background-position: 77% 0px;
+  background-position: 100% 0px;
 }
 
 .services-slider-item:nth-child(3) {
   background: url("../img/credit.png") 100% no-repeat;
-  background-position: 70% 1px;
+  background-position: 100% 1px;
 }
 
 .button-credit {
@@ -1559,6 +1561,11 @@ input.search-field::placeholder {
 .category-navigation-item {
   float: left;
   padding-right: 59px;
+}
+
+.footer-navigation-item:last-child,
+.category-navigation-item:last-child {
+  padding-right: 0px;
 }
 
 .footer-social {
