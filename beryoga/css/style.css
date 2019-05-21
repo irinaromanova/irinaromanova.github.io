@@ -95,7 +95,8 @@ input[type="radio"].visually-hidden {
   margin-right: 547px;
 }
 
-.main-header-logo:hover {
+.main-header-logo:hover,
+.main-header-logo:focus {
   color: #f55e61;
 }
 
@@ -138,7 +139,8 @@ input[type="radio"].visually-hidden {
   opacity: 0.5;
 }
 
-.site-navigation-link:hover {
+.site-navigation-link:hover,
+.site-navigation-link:focus {
   color: #ff6a6d;
   opacity: 1;
 }
@@ -186,7 +188,8 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 0 54px 10px rgba(255, 0, 0, 0.2);
 }
 
-.button-login:hover {
+.button-login:hover,
+.button-login:focus {
   box-shadow: -12px 12px 24px 2px rgba(255, 0, 0, 0.35);
 }
 
@@ -236,7 +239,9 @@ input[type="radio"].visually-hidden {
 }
 
 .service-button:hover,
-.sign-up-button:hover {
+.service-button:focus,
+.sign-up-button:hover,
+.sign-up-button:focus {
   box-shadow: -12px 12px 24px 2px rgba(255, 0, 0, 0.35);
 }
 
@@ -615,7 +620,8 @@ input[type="radio"].visually-hidden {
   margin-left: 124px;
 }
 
-.price-button:hover {
+.price-button:hover,
+.price-button:focus {
   box-shadow: -12px 12px 24px 2px rgba(99, 208, 246, 0.35);
 }
 
@@ -686,7 +692,8 @@ input[type="radio"].visually-hidden {
   margin-left: 137px;
 }
 
-.price-item-best-seller .price-button:hover {
+.price-item-best-seller .price-button:hover,
+.price-item-best-seller .price-button:focus {
   box-shadow: -12px 12px 24px 2px rgba(255, 0, 0, 0.25);
 }
 
@@ -756,7 +763,8 @@ input[type="radio"].visually-hidden {
   margin-right: 136px;
 }
 
-.submenu-item-link:hover {
+.submenu-item-link:hover,
+.submenu-item-link:focus {
   color: #ff6a6d;
   opacity: 1;
 }
