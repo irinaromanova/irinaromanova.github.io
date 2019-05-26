@@ -2,185 +2,220 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Polind</title>
-  <meta name="description" content="Touristic page about Poland">
-  <meta name="keywords" content="Poland, tourism, touristic, adventure">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet" type="text/css">
+  <title>Beryoga</title>
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style-minify.css" rel="stylesheet">
-  <link href="favicon.ico" rel="shortcut icon">
 </head>
 <body>
-  <header class="main-header">
-    <section class="header-top">
-      <a class="main-header-logo">
-        <img src="img/logo.png" width="51" height="61" alt="Polind logo">
+  <header class="main-header container">
+    <nav class="main-navigation">
+      <a class="main-header-logo" aria-label="Beryoga logo">
+        BerYoga
       </a>
-      <p class="polind-logo">Polind</p>
-      <nav class="main-navigation">
+      <div class="navigation-wrapper">
         <ul class="site-navigation-list">
           <li class="site-navigation-item">
-            <a class="site-navigation-link" href="#">Guide</a>
+            <a class="site-navigation-link current" href="home.html">Home</a>
           </li>
           <li class="site-navigation-item">
-            <a class="site-navigation-link" href="#">Journey</a>
+            <a class="site-navigation-link" href="about-us.html">About Us</a>
           </li>
           <li class="site-navigation-item">
-            <a class="site-navigation-link" href="#">Hotels</a>
+            <a class="site-navigation-link" href="contact.html">Contact</a>
           </li>
           <li class="site-navigation-item">
-            <a class="site-navigation-link" href="#">Travelers</a>
+            <a class="site-navigation-link" href="pricing.html">Pricing</a>
           </li>
         </ul>
-      </nav>
-      <a class="search-link" href="#search" aria-label="Search"></a>
-    </section>
-    <section class="header-middle">
-      <h1 class="header-title">Fall in love <span> with Poland </span></h1>
-      <p class="header-text">Best way to find your perfect place in Poland</p>
-      <a class="button search-button" href="#search">SEARCH YOUR PLACE</a>
-    </section>
-    <section class="header-bottom">
-      <p class="popular">Popular places to discover</p>
-      <ul class="popular-list">
-        <li class="popular-item">
-          <img src="img/Place-1.jpg" width="345" height="433" alt="Some place">
+        <a class="button button-login" href="login.html">Login</a>
+      </div>
+    </nav>
+    <section class="header-info">
+      <h2 class="header-info-title">Beautiful videos. <br> Become your best self with BerYoGa.</h2>
+      <p class="header-info-text">
+        For me, BerYoga is more than just a sport – it is lifestyle, a <br> state mind, a philosophy. <br>
+        Now I decided to open BerYoga so that I can share my <br> love and joy of bikram yoga.  It is my hope that you too <br> can discover all the positive impacts of bikram yoga and <br> make bikram yoga as a part of your life.
+      </p>
+      <ul class="header-buttons-list">
+        <li class="header-buttons-item">
+          <a class="button service-button" href="#">Service</a>
         </li>
-        <li class="popular-item">
-          <div class="actions">
-            <a class="button view-offers-button" href="#">View offers</a>
-          </div>
-          <img src="img/Zakopane.jpg" width="371" height="433" alt="Zakopane">
-          <div class="popular-info-wrapper">
-            <h3 class="popular-name">Zakopane</h3>
-            <p class="popular-region">Malopolskie</p>
-          </div>
-        </li>
-        <li class="popular-item">
-          <div class="actions">
-            <a class="button view-offers-button" href="#">View offers</a>
-          </div>
-          <img src="img/Sandomierz.jpg" width="371" height="433" alt="Sandomierz">
-          <div class="popular-info-wrapper">
-            <h3 class="popular-name">Sandomierz</h3>
-            <p class="popular-region">Swietokrzyskie</p>
-          </div>
-        </li>
-        <li class="popular-item">
-          <div class="actions">
-            <a class="button view-offers-button" href="#">View offers</a>
-          </div>
-          <img src="img/Sopot.jpg" width="371" height="433" alt="Zakopane">
-          <div class="popular-info-wrapper">
-            <h3 class="popular-name">Sopot</h3>
-            <p class="popular-region">Pomorskie</p>
-          </div>
-        </li>
-        <li class="popular-item">
-          <img src="img/Place-2.jpg" width="345" height="433" alt="Some place">
+        <li class="header-buttons-item">
+          <a class="button sign-up-button" href="#">Sign Up</a>
         </li>
       </ul>
     </section>
   </header>
   <main>
-    <h2 class="visually-hidden">Search place to visit</h2>
-    <section class="where-to-go">
-      <h3 class="search-title">Where you want to go?</h3>
-      <form class="search-form" action="#" method="get">
-        <div class="search-wrap">
-          <input  class="search-field" type="search" name="search" id="search" placeholder="Search place">
-          <label for="search" class="search-icon"></label>
-        </div>
-      </form>
-      <div class="search-tags">
-        <ul class="types-list">
-          <li class="type-item">
-            <a class="button type-item-button type-item-button-current" href="#">Journey</a>
-          </li>
-          <li class="type-item">
-            <a class="button type-item-button" href="#">Travelers</a>
-          </li>
-          <li class="type-item">
-            <a class="button type-item-button" href="#">Guide</a>
-          </li>
-        </ul>
-        <ul class="cities-list">
-          <li class="city-item">
-            <a class="button city-item-button" href="#">Mazury</a>
-          </li>
-          <li class="city-item">
-            <a class="button city-item-button" href="#">Cracow</a>
-          </li>
-          <li class="city-item">
-            <a class="button city-item-button" href="#">Zakopane</a>
-          </li>
-        </ul>
-      </div>
-      <ul class="places-list">
-        <li class="place-item">
-          <img src="img/Poznan.jpg" width="351" height="169" alt="Poznan">
-          <h3 class="place-name">Poznan</h3>
-          <p class="region">Wielkopolskie</p>
-          <a class="button view-offers-button" href="#">View offers</a>
+    <section class="choose container">
+      <h2 class="choose-title">Why Choose BerYoga?</h2>
+      <p class="choose-text">Access hundreds of online yoga classes shot in natural studios around the world. <br> Unlimited access for $150/Years.</p>
+      <ul class="choose-list">
+        <li class="choose-item">
+          <img src="img/icon-choose-1.png" width="219" height="219" alt="Lifetime icon">
+          <h4 class="choose-item-title">Lifetime Updates</h4>
+          <p class="choose-item-text">Free lifetime updates for our <br> lates collection.</p>
         </li>
-        <li class="place-item">
-          <img src="img/Warsaw.jpg" width="351" height="169" alt="Warsaw">
-          <h3 class="place-name">Warsaw</h3>
-          <p class="region">Mazowieckie</p>
-          <a class="button view-offers-button" href="#">View offers</a>
+        <li class="choose-item">
+          <img src="img/icon-choose-2.png" width="219" height="219" alt="Videos icon">
+          <h4 class="choose-item-title">Anywhere Videos</h4>
+          <p class="choose-item-text">Access world-class online yoga <br> videos can be seen on the appli-<br>cation & web</p>
         </li>
-        <li class="place-item">
-          <img src="img/Wroclaw.jpg" width="351" height="169" alt="Wroclaw">
-          <h3 class="place-name">Wroclaw</h3>
-          <p class="region">Dolnoslaskie</p>
-          <a class="button view-offers-button" href="#">View offers</a>
-        </li>
-        <li class="place-item">
-          <img src="img/Karpacz.jpg" width="351" height="169" alt="Karpacz">
-          <h3 class="place-name">Karpacz</h3>
-          <p class="region">Dolnoslaskie</p>
-          <a class="button view-offers-button" href="#">View offers</a>
-        </li>
-        <li class="place-item">
-          <img src="img/Dolina.jpg" width="351" height="169" alt="Dolina Olczyska">
-          <h3 class="place-name">Dolina Olczyska</h3>
-          <p class="region">Malopolskie</p>
-          <a class="button view-offers-button" href="#">View offers</a>
-        </li>
-        <li class="place-item">
-          <img src="img/Kozy.jpg" width="351" height="169" alt="Kozy">
-          <h3 class="place-name">Kozy</h3>
-          <p class="region">Slaskie</p>
-          <a class="button view-offers-button" href="#">View offers</a>
+        <li class="choose-item">
+          <img src="img/icon-choose-3.png" width="219" height="219" alt="Access icon">
+          <h4 class="choose-item-title">Access Unlimited</h4>
+          <p class="choose-item-text">Find lots of yoga video tutorials,<br> from all over the world</p>
         </li>
       </ul>
     </section>
-    <section class="explore">
-      <h2 class="explore-title">Explore city</h2>
-      <div class="explore-wrapper">
-        <div class="explore-info">
-          <h2 class="city-title">Sandomierz</h2>
-          <p class="city-text">Sandomierz is one of the oldest and historically most significant cities in Poland. Archeological finds around the city indicate that humans have inhabited the area since neolithic times. The city came into existence in the early Middle Ages, taking advantage of an excellent location at the junction of Vistula and San rivers, and on the path of important trade routes. </p>
-          <p class="city-text">The first known historical mention of the city comes from the early 12th-century, when the chronicler Gallus Anonymus ranked it together with Kraków and Wrocław as one of the main cities of Poland. The testament (ca 1115-1118) of Bolesław III Wrymouth, in which he divided Poland among his sons, designated Sandomierz as the capital of one of the resulting principalities, the Duchy of Sandomierz.</p>
-          <a class="button check-offers-button" href="#">Check offers</a>
-        </div>
-        <div class="pic">
-          <img src="img/Sandomierz-big.jpg" width="570" height="555" alt="Sandomierz">
-        </div>
+    <section class="whats-on container">
+      <div class="whats-on-wrapper">
+        <h2 class="whats-on-title">What’s on BerYoga?</h2>
+
+        <ul class="whats-on-list">
+          <li class="whats-on-item">
+            <h4 class="whats-on-item-title">New Classes Every Week</h4>
+            <p class="whats-on-item-text">Discover hundreds of classes in our library. Save your fa-<br> vorites, try new styles and customize your routine to fit <br> your schedule.</p>
+          </li>
+          <li class="whats-on-item">
+            <h4 class="whats-on-item-title">Series</h4>
+            <p class="whats-on-item-text">Our multi-class series are designed to help you achieve <br> your fitness and wellness goals.</p>
+          </li>
+          <li class="whats-on-item">
+            <h4 class="whats-on-item-title">Pose Directory</h4>
+            <p class="whats-on-item-text">Get step-by-step instructions on poses and sequences in <br> our extensive video pose directory.</p>
+          </li>
+        </ul>
       </div>
     </section>
-    <section class="enjoy">
-      <div class="enjoy-wrapper">
-        <h2 class="enjoy-title">Enjoy your journey</h2>
-        <a class="button sign-up-button" href="#">Sign up</a>
-        <p class="newsletter">You can also sign up on our <a href="#">newsletter</a></p>
+    <section class="article-preview-1 container">
+      <article>
+        <p class="author-name">By Brittany Risherjan</p>
+        <h2 class="article-title">The Healing Power of Trauma-Informed Yoga Classes.</h2>
+        <p class="article-preview-text">Celebrating five years of service, the nonprofit <br> Exhale to Inhale brings free, trauma-informed <br> yoga classes to rape crisis centers and domes- <br> tic violence shelters in Jakarta.</p>
+        <a href="#" title="Read more" class="read-more">Read More ></a>
+      </article>
+    </section>
+    <section class="article-preview-2">
+      <div class="container">
+        <article>
+          <h2 class="article-title">5 Ways to Make Every Yoga Class More Restorative and Therapeutic</h2>
+          <p class="article-preview-text"> In part four of our series on teaching trauma-sensitive yoga, <br> teacher Daniel Sernicola shares five practices to help your students <br> get grounded and cultivate mindfulness. </p>
+          <p class="article-preview-text"> Teachers, need liability insurance? As a TeachersPlus <br> member, you can access low-cost coverage and more than a dozen <br> valuable benefits that will build your skills and business. Enjoy a free <br> subscription to YJ, a free profile on our national directory, exclusive <br> webinars and content packed with advice, discounts on educational <br> resources and gear, and more</p>
+          <a href="#" title="Read more" class="read-more">Read More ></a>
+        </article>
       </div>
     </section>
   </main>
   <footer class="main-footer">
-    <img src="img/logo.png" alt="logo" class="logo">
-    <p class="rights-reserved">All rights reserved by symu.co</p>
-    <span class="polind">Polind</span>
+    <ul class="price-list container">
+      <li class="price-item">
+        <ul class="products-list">
+          <li class="product-item">Unlimitied Access Video</li>
+          <li class="product-item">Saved Videos</li>
+          <li class="product-item">Ofline Access</li>
+        </ul>
+        <p class="price">15</p>
+        <p class="billed">Billed monthly</p>
+        <a class="button price-button" href="#">Become A Member</a>
+      </li>
+      <li class="price-item price-item-best-seller">
+        <div class="best-seller-wrapper">
+          <h3 class="best-seller">Best Seller</h3>
+        </div>
+        <ul class="products-list">
+          <li class="product-item">Unlimitied Access Video</li>
+          <li class="product-item">Saved Videos</li>
+          <li class="product-item">Ofline Access</li>
+        </ul>
+        <p class="price">150</p>
+        <p class="billed">Billed a one year - Save 45%</p>
+        <a class="button price-button" href="#">Become A Member</a>
+      </li>
+      <li class="price-item">
+        <h3 class="price-item-title">Yoga Class</h3>
+        <ul class="products-list">
+          <li class="product-item">Only Yoga Class</li>
+          <li class="product-item">Unlimitied Access Video</li>
+        </ul>
+        <p class="price">5</p>
+        <p class="billed">Billed monthly</p>
+        <a class="button price-button" href="#">Become A Member</a>
+      </li>
+    </ul>
+    <section class="footer-menu container">
+      <ul class="footer-menu-list">
+        <li class="footer-menu-item">
+          <h4 class="footer-menu-title"><b>Contact Us</b></h4>
+          <p class="footer-address">
+            Beryoga, Jl. Sudirman <br>
+            no. 129, Tebet <br>
+            Jakarta Selatan<br>
+            <br>
+            beryoga@yuk.com <br>
+            0812 6824 2856 (Main)<br>
+            (072) 2673842  (Toll-free)
+          </p>
+        </li>
+        <li class="footer-menu-item">
+          <h4 class="footer-menu-title"><b>About Us</b></h4>
+          <ul class="submenu-list-about-us">
+            <li class="submenu-item">
+              <a class="submenu-item-link" href="#">Our Mission</a>
+            </li>
+            <li class="submenu-item">
+              <a class="submenu-item-link" href="#">Our Team</a>
+            </li>
+            <li class="submenu-item">
+              <a class="submenu-item-link" href="#">Management</a>
+            </li>
+            <li class="submenu-item">
+              <a class="submenu-item-link" href="#">Policies</a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer-menu-item">
+          <h4 class="footer-menu-title"><b>Our Programs</b></h4>
+          <ul class="submenu-list">
+            <li class="submenu-item">
+              <a class="submenu-item-link" href="#">Yoga Class</a>
+            </li>
+            <li class="submenu-item">
+              <a class="submenu-item-link" href="#">Bikram Yoga</a>
+            </li>
+            <li class="submenu-item">
+              <a class="submenu-item-link" href="#">Acro Yoga</a>
+            </li>
+            <li class="submenu-item">
+              <a class="submenu-item-link" href="#">Sveda Yoga</a>
+            </li>
+            <li class="submenu-item">
+              <a class="submenu-item-link" href="#">Yo Mama</a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer-menu-item">
+          <h4 class="footer-menu-title"><b>Support Trails</b></h4>
+          <ul class="submenu-list">
+            <li class="submenu-item">
+              <a class="submenu-item-link" href="#">Donate</a>
+            </li>
+            <li class="submenu-item">
+              <a class="submenu-item-link" href="#">Individual Membership</a>
+            </li>
+            <li class="submenu-item">
+              <a class="submenu-item-link" href="#">Gift Membership</a>
+            </li>
+            <li class="submenu-item">
+              <a class="submenu-item-link" href="#">Hiker Store</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <div class="copyright container">
+      <p>Copyright © 2019 BerYoga All rights reserved.</p>
+    </div>
   </footer>
 </body>
 </html>
