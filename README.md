@@ -15,3 +15,5 @@ HTML, CSS, раскладка блоков с помощью флекс-бокс
 # [Polind](https://irinaromanova.github.io/polind/index.html)
 Одностраничный туристический сайт о Польше.
 HTML, CSS, раскладка блоков с помощью флекс-боксов
+
+# [Beryoga2](https://irinaromanova.github.io/beryoga2/index.html)
