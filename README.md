@@ -13,7 +13,7 @@ HTML, CSS, Javascript, раскладка блоков с помощью фле�
 HTML, CSS, раскладка блоков с помощью флекс-боксов
 
 ---
-permalink: /index.html
+permalink: /404.html
 ---
 
 # [Polind](https://irinaromanova.github.io/polind/index.html)
