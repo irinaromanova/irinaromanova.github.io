@@ -17,3 +17,5 @@ HTML, CSS, раскладка блоков с помощью флекс-бокс
 HTML, CSS, раскладка блоков с помощью флекс-боксов
 
 # [Beryoga2](https://irinaromanova.github.io/beryoga2/index.html)
+
+# [polind](https://irinaromanova.github.io/polind/index.html)
