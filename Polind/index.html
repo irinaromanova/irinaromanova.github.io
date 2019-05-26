@@ -1,87 +1,203 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
-  <title>Polind</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet" type="text/css">
+  <title>Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet" type="text/css">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style-minify.css" rel="stylesheet">
-  <link href="css/style-minify.css" rel="stylesheet">
-  <link href="favicon.ico" rel="shortcut icon">
 </head>
 
 <body>
   <header class="main-header">
-    <section class="header-top">
+    <nav class="main-navigation container">
       <a class="main-header-logo">
-        <img src="img/logo.png" width="51" height="61" alt="Polind logo">
+        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
       </a>
-      <p class="polind-logo">Polind</p>
-      <nav class="main-navigation">
+      <div class="navigation-wrapper">
         <ul class="site-navigation-list">
           <li class="site-navigation-item">
-            <a class="site-navigation-link" href="#">Guide</a>
+            <a class="site-navigation-link current" href="studio.html">Студия</a>
           </li>
           <li class="site-navigation-item">
-            <a class="site-navigation-link" href="#">Journey</a>
+            <a class="site-navigation-link" href="customers.html">Клиенты</a>
           </li>
           <li class="site-navigation-item">
-            <a class="site-navigation-link" href="#">Hotels</a>
+            <a class="site-navigation-link" href="catalog.html">Магазин</a>
           </li>
           <li class="site-navigation-item">
-            <a class="site-navigation-link" href="#">Travelers</a>
+            <a class="site-navigation-link" href="contacts.html">Контакты</a>
           </li>
         </ul>
-      </nav>
-      <a class="search-link" href="#search" aria-label="Search"></a>
+        <a class="basket-link" href="basket.html">Корзина</a>
+      </div>
+    </nav>
+    <section class="slider">
+      <div class="container">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+        <div class="slider-controls">
+          <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+          <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+          <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
+        </div>
+        <ul class="slider-list">
+          <li class="slider-item">
+            <h3 class="slogan">Долго, дорого,<br> скрупулезно.</h3>
+            <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+            <a class="slider-item-button button" href="#">Узнать больше</a>
+          </li>
+          <li class="slider-item">
+            <h3 class="slogan">Любим математику как никто другой</h3>
+            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+            <a class="slider-item-button button" href="#">Узнать больше</a>
+          </li>
+          <li class="slider-item">
+            <h3 class="slogan">Только ночь,<br> только хардкор</h3>
+            <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+            <a class="slider-item-button button" href="#">Узнать больше</a>
+          </li>
+        </ul>
+      </div>
     </section>
-    <section class="header-middle">
-      <h1 class="header-title">Fall in love <span> with Poland </span></h1>
-      <p class="header-text">Best way to find your perfect place in Poland</p>
-      <a class="button search-button" href="#search">SEARCH YOUR PLACE</a>
-    </section>
-    <section class="header-bottom">
-      <p class="popular">Popular places to discover</p>
-      <ul class="popular-list">
-        <li class="popular-item">
-          <img src="img/Place-1.jpg" width="345" height="433" alt="Some place">
+  </header>
+
+  <main class="container">
+    <section class="advantages">
+      <h2 class="visually-hidden">Услуги</h2>
+      <ul class="advantages-list">
+        <li class="advantage-item advantage-item-sites">
+          <img src="img/illustration-1.jpg" width="300" height="146" alt="Картинка с веб-сайтом">
+          <h2 class="advantage-title">Веб-сайты</h2>
+          <p class="advantage-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <a class="button-order button" href="#">Заказать</a>
         </li>
-        <li class="popular-item">
-          <div class="actions">
-            <a class="button view-offers-button" href="#">View offers</a>
-          </div>
-          <img src="img/Zakopane.jpg" width="371" height="433" alt="Zakopane">
-          <div class="popular-info-wrapper">
-            <h3 class="popular-name">Zakopane</h3>
-            <p class="popular-region">Malopolskie</p>
-          </div>
+        <li class="advantage-item advantage-item-apps">
+          <img src="img/illustration-2.jpg" width="300" height="146" alt="Картинка с приложением">
+          <h2 class="advantage-title">Приложения</h2>
+          <p class="advantage-text">Покорите топ-10 приложений в AppStore и Google Play</p>
+          <a class="button-order button" href="#">Заказать</a>
         </li>
-        <li class="popular-item">
-          <div class="actions">
-            <a class="button view-offers-button" href="#">View offers</a>
-          </div>
-          <img src="img/Sandomierz.jpg" width="371" height="433" alt="Sandomierz">
-          <div class="popular-info-wrapper">
-            <h3 class="popular-name">Sandomierz</h3>
-            <p class="popular-region">Swietokrzyskie</p>
-          </div>
-        </li>
-        <li class="popular-item">
-          <div class="actions">
-            <a class="button view-offers-button" href="#">View offers</a>
-          </div>
-          <img src="img/Sopot.jpg" width="371" height="433" alt="Zakopane">
-          <div class="popular-info-wrapper">
-            <h3 class="popular-name">Sopot</h3>
-            <p class="popular-region">Pomorskie</p>
-          </div>
-        </li>
-        <li class="popular-item">
-          <img src="img/Place-2.jpg" width="345" height="433" alt="Some place">
+        <li class="advantage-item advantage-item-presentations">
+          <img src="img/illustration-3.jpg" width="300" height="146" alt="Картинка с презентацией">
+          <h2 class="advantage-title">Презентации</h2>
+          <p class="advantage-text">Вы даже не подозреваете, насколько вы изумительны!</p>
+          <a class="button-order button" href="#">Заказать</a>
         </li>
       </ul>
     </section>
-  </header>
-</body>
 
-</html>
+    <div class="studio container">
+      <section class="studio-info">
+        <h2 class="visually-hidden">О нас</h2>
+        <b class="aboutus">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+        <p class="aboutus-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+        <h4 class="development">Выполняем заказы на разработку:</h4>
+        <ul class="development-list">
+          <li class="development-item">Веб-сайтов любой сложности</li>
+          <li class="development-item">Мобильных приложений для iOS и Android</li>
+          <li class="development-item">Слайдшоу и видео для корпоративных презентаций</li>
+        </ul>
+      </section>
+      <section class="studio-visual">
+        <img src="img/nerds-illustration.png" width="360" height="208" alt="Иллюстрация Нёрдс">
+        <h4 class="accuracy">С 2004 года любим точность во всем:</h4>
+        <ul class="accuracy-list">
+          <li class="accuracy-item">
+            <b>146<span>%</span></b>
+            <p>Уровень самоотдачи</p>
+          </li>
+          <li class="accuracy-item">
+            <b>100<span>%</span></b>
+            <p>Соблюдение сроков</p>
+          </li>
+          <li class="accuracy-item">
+            <b>50<span>%</span></b>
+            <p>Минимальная предоплата</p>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <section class="partners container">
+      <h2 class="visually-hidden">Наши партнеры</h2>
+      <ul class="partner-logo-list">
+        <li class="partner-logo-item partner-logo-item-html">
+          <a class="partner-logo-link" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/logo-1.png" width="199" height="68" alt="HTML Academy">
+          </a>
+        </li>
+        <li class="partner-logo-item partner-logo-item-barbershop">
+          <a class="partner-logo-link" href="#">
+            <img src="img/logo-2.png" width="209" height="87" alt="Барбершоп «Бородинский»">
+          </a>
+        </li>
+        <li class="partner-logo-item partner-logo-item-pink">
+          <a class="partner-logo-link" href="#">
+            <img src="img/logo-3.png" width="185" height="52" alt="Pink">
+          </a>
+        </li>
+        <li class="partner-logo-item partner-logo-item-mishka">
+          <a class="partner-logo-link" href="#">
+            <img src="img/logo-4.png" width="173" height="84" alt="Mishka">
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <section id="map" class="footer-map">
+      <div class="footer-contacts">
+        <h4 class="studio-name">NЁRDS DESIGN STUDIO</h4>
+        <p class="studio-address">191186, Санкт-Петербург,
+          ул. Б. Конюшенная, д. 19/8</p>
+          <a class="phone-number-link" href="#">тел. +7 (812) 275-75-75</a>
+          <a class="button-writeus button" href="write-us.html">Напишите нам</a>
+        </div>
+        <form class="modal write-us-modal" action="https://echo.htmlacademy.ru" method="post">
+          <b class="write-us">Напишите нам</b>
+          <button class="modal-close" type="button">Закрыть</button>
+          <div class="write-us-wrapper">
+            <div class="write-us-item">
+              <label class="write-us-label" for="write-us-name">Ваше имя:</label>
+              <input class="write-name" id="write-us-name" type="text" name="name" placeholder="Имя Фамилия">
+            </div>
+            <div class="write-us-item">
+              <label class="write-us-label" for="write-us-email">Ваш e-mail:</label>
+              <input class="write-email" id="write-us-email" type="email" name="email" placeholder="email@example.com">
+            </div>
+            <div class="write-us-item">
+              <label class="write-us-label" for="write-us-letter-text">Текст письма:</label>
+              <textarea class="write-letter" id="write-us-letter-text" rows="5" name="letter-text" placeholder="В свободной форме"></textarea>
+            </div>
+          </div>
+          <button class="button-post button" type="submit">Отправить</button>
+        </form>
+      </section>
+      <section class="footer-social container">
+        <ul class="social-buttons">
+          <li class="social-button-item-vk">
+            <a class="social-button-link social-button-link-vk" aria-label="Мы Вконтакте" href="#">Вконтакте</a>
+          </li>
+          <li class="social-button-item-fb">
+            <a class="social-button-link social-button-link-fb" aria-label="Мы на Фейсбуке" href="#">Фейсбук</a>
+          </li>
+          <li class="social-button-item-insta">
+            <a class="social-button-link social-button-link-insta" aria-label="Наш Инстаграм" href="#">Инстаграм</a>
+          </li>
+        </ul>
+        <div class="inscription">
+          <h3 class="join-us">Давайте дружить, это выгодно!</h3>
+          <p class="discount">Скидка 10% для друзей из социальных сетей</p>
+        </div>
+      </section>
+    </footer>
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="js/modal.js"></script>
+
+  </body>
+  </html>
